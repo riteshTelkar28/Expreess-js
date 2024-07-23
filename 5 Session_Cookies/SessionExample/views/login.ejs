@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h2>Example of Session in Express</h2></center>
+    <hr>
+        <center>
+            <a href="/">Home</a>
+            <a href="/login">LoginIn</a>
+        </center>
+    <hr>
+    <center>
+        <form action="/home">
+            <table>
+                <caption><h3>Login Form</h3></caption>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" placeholder="Enter Email" name="email"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" placeholder="Enter Password" name="password"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Login"> 
+                    </td>
+                </tr>
+            </table> 
+            <span style="color:red"><%= msg %></span>   
+        </form>
+    </center>
+</body>
+</html>

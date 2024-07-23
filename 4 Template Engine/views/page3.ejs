@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Book Details</h2>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name of Book</th>
+                <th>Author Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% bookDetails.forEach((book)=>{ %>
+                <tr>
+                    <td><%= book.bookName %></td>
+                    <td><%= book.authorName %></td>
+                    <td><%= book.price %></td>
+                </tr>    
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
