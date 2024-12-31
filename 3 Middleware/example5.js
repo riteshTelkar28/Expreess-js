@@ -2,7 +2,7 @@
 
 var app = require("express")();
 app.get("/",(request,response,next)=>{
-    var err = new Error("Error Occured");
+    var err = new Error(" Occured");
     next(err);
 });
 

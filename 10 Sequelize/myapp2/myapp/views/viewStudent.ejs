@@ -1,0 +1,28 @@
+<%- include('./header.ejs')  %>
+
+<body>
+    <%if(result){ %>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>sid</th>
+                <th>name</th>
+                <th>email</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody>
+                <% result.forEach((student)=>{ %>
+                    <tr>
+                        <td><%=student.dataValues.sid %></td>
+                        <td><%=student.dataValues.name %></td>
+                        <td><%=student.dataValues.email %></td>
+                        <td><%=student.dataValues.password %></td>
+                    </tr>
+               <% }) %>
+        </tbody>
+    </table>
+    <% }else { %>
+        <h2>No record found</h2>
+     <%}%>
+</body>

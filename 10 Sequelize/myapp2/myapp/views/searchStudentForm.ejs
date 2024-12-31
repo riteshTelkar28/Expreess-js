@@ -1,0 +1,33 @@
+<%- include('./header.ejs') %>
+
+<body>
+    <center>
+        <form action="/searchStudentById" method="post">
+            <input type="text" name="sid">
+            <input type="submit" value="search">
+        </form>
+        <br>
+        <% if(result){ %>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Sid</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%=result.sid  %></td>
+                        <td><%=result.name  %></td>
+                        <td><%=result.email  %></td>
+                        <td><%=result.password  %></td>
+                    </tr>
+                </tbody>
+            </table>
+         <%}else{ if(status!=0){%>
+            <span style="color: red;">No record found</span>
+         <%}}%>   
+    </center>
+</body>

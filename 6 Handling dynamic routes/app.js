@@ -6,7 +6,11 @@ app.use(cors());
 
 // handle single route
 app.get("/example",(request,response)=>{
+    // console.log(request.params);
+    console.log(request.query);
     var id = request.query.id;
+    console.log(id);
+    
     response.send(`your Id : ${id}`);
 });
 

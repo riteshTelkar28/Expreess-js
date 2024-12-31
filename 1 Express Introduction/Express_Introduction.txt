@@ -60,7 +60,7 @@ https://www.slideshare.net/huseyinbabal/complete-mvc-on-node-js-27877254 (slide 
 5) It makes the integration process with databases such as MongoDB, Redis, MySQL effortless.
 6) Express also defines an error-handling middleware.
 7) Built-In URL routing  and method checking.
-8) Support for middleware(middleware are Intermediators)
+8) Support for middleware(middleware are Intermediators)                                                                                          
         a) Application-level middleware
         b) Router-level middleware
         c) Error-handling middleware

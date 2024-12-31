@@ -1,0 +1,24 @@
+<%- include('./header.ejs') %>
+
+<style>
+    input{
+        height: 30px;
+        width: 300px;
+        margin: 5px;
+    }
+    input[type="submit"],input[type="reset"]{
+        background-color: darkslategray;
+        color: white;
+    }
+</style>
+<center>
+    <h2>login form</h2>
+    <span style="color: red;"><%= message %></span>
+    <form action="/user/login" method="post">
+        <input type="email" name="email" id="email" placeholder="Enter email"> <br>
+        <input type="password" name="password" id="password" placeholder="Enter password"> <br>
+
+        <input type="submit" value="Login"><br>
+        <input type="reset" value="Reset">
+    </form>
+</center>

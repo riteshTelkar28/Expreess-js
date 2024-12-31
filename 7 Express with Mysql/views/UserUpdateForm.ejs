@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<%- include('./userHeader') %>
+<center>
+    <form action="/user/updateUser" method="post">
+        <table>
+            <caption>
+                update form
+            </caption>
+            <tbody>
+                <tr>
+                    <td>
+                        Username <br>
+                        <input value="<%=userData.username %>" type="text" name="username" placeholder="enter username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email <br>
+                        <input value="<%=userData.email %>" type="email" name="email" placeholder="enter email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password <br>
+                        <input value="<%=userData.password %>" type="password" name="password" placeholder="enter password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address <br>
+                        <input value="<%=userData.address %>" type="text" name="address" placeholder="enter address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="update">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</center>
+</body>
+</html>
